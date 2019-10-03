@@ -1,0 +1,8 @@
+<button class = "btn btn-primary" (click)="toggle()">display details</button>
+<p *ngIf="factor; else noFish">Tuna fish selected</p>
+<ng-template #noFish>
+    <p>Salmon fish is selected</p>
+</ng-template>
+
+<span *ngFor="let a of logger">{{a}}</span>
+
